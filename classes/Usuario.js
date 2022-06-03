@@ -1,5 +1,12 @@
 class Usuario {
-  Usuario(nome) {
-    let nome = nome;
+  constructor(nome) {
+    this.setNome(nome);
+  }
+
+  getNome() {
+    return this.nome;
+  }
+  setNome(nome) {
+    this.nome = nome;
   }
 }
