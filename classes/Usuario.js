@@ -1,12 +1,55 @@
 class Usuario {
-  constructor(nome) {
-    this.setNome(nome);
+  #nome;
+  #matricula;
+  #login;
+  #senha;
+  #disciplinas;
+
+  constructor(novoNome, novoLogin, novaSenha) {
+    this.nome = novoNome;
+    this.login = novoLogin;
+    this.senha = novaSenha;
   }
 
-  getNome() {
-    return this.nome;
+  get nome() {
+    return this.#nome;
   }
-  setNome(nome) {
-    this.nome = nome;
+
+  set nome(novoNome) {
+    this.#nome = novoNome;
+  }
+
+  get matricula() {
+    return this.#matricula;
+  }
+
+  set matricula(novaMatricula) {
+    this.#matricula = novaMatricula;
+  }
+
+  get login() {
+    return this.#login;
+  }
+
+  set login(novoLogin) {
+    this.#login = novoLogin;
+  }
+
+  get senha() {
+    return this.#senha;
+  }
+
+  set senha(novaSenha) {
+    this.#senha = novaSenha;
+  }
+
+  get disciplinas() {
+    return this.#disciplinas;
+  }
+
+  set disciplinas(novasDisciplinas) {
+    this.#disciplinas = novasDisciplinas;
   }
 }
+
+export default Usuario;
