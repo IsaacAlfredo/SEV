@@ -3,7 +3,7 @@ class Usuario {
   #matricula;
   #login;
   #senha;
-  #disciplinas;
+  #disciplinas = [];
 
   constructor(novoNome, novoLogin, novaSenha) {
     this.nome = novoNome;
@@ -47,8 +47,8 @@ class Usuario {
     return this.#disciplinas;
   }
 
-  set disciplinas(novasDisciplinas) {
-    this.#disciplinas = novasDisciplinas;
+  set disciplinas(novaDisciplina) {
+    this.#disciplinas.push(novaDisciplina);
   }
 }
 
