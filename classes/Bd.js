@@ -8,9 +8,7 @@ class Bd {
   get lista() {
     return this.#lista;
   }
-  set lista(novoProfessor) {
-    this.#lista.push(novoProfessor);
+  set lista(novaLista) {
+    this.#lista = novaLista;
   }
 }
-
-export default Bd;

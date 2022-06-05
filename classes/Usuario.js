@@ -51,5 +51,3 @@ class Usuario {
     this.#disciplinas.push(novaDisciplina);
   }
 }
-
-export default Usuario;

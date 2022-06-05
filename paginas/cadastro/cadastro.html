@@ -7,34 +7,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cadastro</title>
 </head>
+
 <body>
-<header>
-    <h1>SEV</h1>
-</header>
-<section>
-    <label for="nome">
-        Nome
-        <input type="text" id="nome">
-    </label>
-    <label for="login">
-        Login
-        <input type="text" id="login">
-    </label>
-    <label for="senha">
-        Senha
-        <input type="text" id="senha">
-    </label>
-    <label for="tipo">Você é um:</label>
+    <header>
+        <h1>SEV</h1>
+    </header>
+    <section>
+        <label for="nome">
+            Nome
+            <input type="text" id="nome">
+        </label>
+        <label for="login">
+            Login
+            <input type="text" id="login">
+        </label>
+        <label for="senha">
+            Senha
+            <input type="text" id="senha">
+        </label>
+        <label for="tipo">Você é um:</label>
 
-    <select name="tipo" id="tipo">
-        <option value="aluno">Aluno</option>
-        <option value="professor">Professor</option>
-    </select>
+        <select name="tipo" id="tipo">
+            <option value="aluno">Aluno</option>
+            <option value="professor">Professor</option>
+        </select>
 
-    <button onclick="cadastrar()">Confirmar</button>
+        <button id="cadastrar" onclick="cadastrar()">Cadastrar</button>
 
-</section>
-<script src="cadastro.js"></script>
+    </section>
+    <script src="/../SEV/classes/Usuario.js"></script>
+    <script src="/../SEV/classes/Aluno.js"></script>
+    <script src="/../SEV/classes/Professor.js"></script>
+    <script src="/../SEV/classes/Bd.js"></script>
+    <script src="cadastro.js"></script>
 </body>
 
 </html>
