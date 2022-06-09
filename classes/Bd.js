@@ -12,3 +12,5 @@ class Bd {
     this.#lista = novaLista;
   }
 }
+
+export { Bd };
