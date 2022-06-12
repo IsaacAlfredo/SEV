@@ -1,4 +1,4 @@
-import { Usuario } from "./Usuario";
+import { Usuario } from "./Usuario.js";
 
 class Aluno extends Usuario {
   constructor(novoNome, novoLogin, novaSenha) {

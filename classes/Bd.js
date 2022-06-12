@@ -11,6 +11,10 @@ class Bd {
   set lista(novaLista) {
     this.#lista = novaLista;
   }
+
+  adicionarItem(item) {
+    this.lista.push(item);
+  }
 }
 
 export { Bd };

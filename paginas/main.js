@@ -1,6 +1,25 @@
-import { Aluno } from "../classes/Aluno";
-import { Bd } from "../classes/Bd";
-import { Professor } from "../classes/Professor";
+import { Aluno } from "../classes/Aluno.js";
+import { Bd } from "../classes/Bd.js";
+import { Professor } from "../classes/Professor.js";
 
 var alunos = new Bd();
 var professores = new Bd();
+
+console.log("Bem vindo!");
+
+/*while (true) {
+  console.log("Selecione uma opção no menu:");
+  let menuOpcao;
+  /*switch (menuOpcao) {
+    case "1":
+      break;
+    case "2":
+      break;
+    case "0":
+      break;
+    default:
+      console.log("Erro: Digite uma opção válida");
+      break;
+  }
+}
+*/
