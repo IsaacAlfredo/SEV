@@ -1,11 +1,12 @@
 import { Aluno } from "../classes/Aluno.js";
 import { Bd } from "../classes/Bd.js";
 import { Professor } from "../classes/Professor.js";
+import {} from "process";
 
 var alunos = new Bd();
 var professores = new Bd();
 
-console.log("Bem vindo!");
+process.stdout.write("Bem vindo!\n");
 
 /*while (true) {
   console.log("Selecione uma opção no menu:");
