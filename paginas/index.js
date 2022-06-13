@@ -1,28 +1,16 @@
 import { Aluno } from "../classes/Aluno.js";
 import { Bd } from "../classes/Bd.js";
 import { Professor } from "../classes/Professor.js";
-import {} from "process";
 import { input } from "../funcoes/input.js";
+import { print } from "../funcoes/print.js";
+import { ConsoleMenu } from "../classes/ConsoleMenu.js";
 
 var alunos = new Bd();
 var professores = new Bd();
 
 process.stdout.write("Bem vindo!\n");
-input();
-
-/*while (true) {
-  console.log("Selecione uma opção no menu:");
-  let menuOpcao;
-  /*switch (menuOpcao) {
-    case "1":
-      break;
-    case "2":
-      break;
-    case "0":
-      break;
-    default:
-      console.log("Erro: Digite uma opção válida");
-      break;
-  }
+function event1() {
+  console.log("funciona!");
 }
-*/
+var cm = new ConsoleMenu("titulo", ["sair", "opção 1"], [event1], true);
+cm.execute();
